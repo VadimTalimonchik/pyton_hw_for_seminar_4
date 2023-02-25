@@ -25,4 +25,5 @@ count = list()
 for i in range(len(list_1) - 1):
     count.append(list_1[i - 1] + list_1[i] + list_1[i + 1])
 count.append(list_1[-2] + list_1[-1] + list_1[0])
-print(max(count))
+print('Максимального числа собранных ягод:', max(count))
+print()
