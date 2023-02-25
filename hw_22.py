@@ -8,4 +8,28 @@
 # 3 6 9 12 15 18
 # 6 12
 
-print('hello 22')
+print()
+n=(int(input("Введите кол-во элементов 1-го множества: ")))
+m=(int(input("Введите кол-во элементов 2-го множества: ")))
+print()
+
+list_1=[]
+for i in range(n):
+    x = int(input("Введите элемент 1-го множества: "))
+    list_1.append(x)
+print()
+
+list_2=[]
+for i in range(m):
+    y = int(input("Введите элемент 2-го множества: "))
+    list_2.append(y)
+print()
+
+list_1 = set(list_1)
+list_2 = set(list_2)
+print(list_1)
+print(list_2)
+print()
+
+print(list_1.intersection(list_2))
+print()
